@@ -1,10 +1,6 @@
 * {
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	font-family: "Lora", Times, serif;
-}
-
-h2 {
-	text-align: center;
 }
 
 a {
@@ -23,13 +19,19 @@ ul {
 	flex-direction: column;
 }
 
-#sidebar {
-
+#sidebar, #archive2, footer {
+	text-align: center;
 }
 
-#footer1 {
+
+#archive1, #footer1 {
 	display: none;
 }
+
+#about {
+	padding: 0px 40px 0px;
+}
+
 
 #posts {
 	height: 100px;
@@ -40,10 +42,10 @@ ul {
 	#container{
 		flex-direction: row;
 	}
-	#footer1 {
+	#archive1, #footer1 {
 		display: initial;
 	}
-	#footer2 {
+	#archive2, #footer2 {
 		display: none;
 	}
 	#posts {

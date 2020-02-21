@@ -1,0 +1,52 @@
+* {
+	border: 1px solid red;
+	font-family: "Lora", Times, serif;
+}
+
+h2 {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+}
+
+#sidebar {
+
+}
+
+#footer1 {
+	display: none;
+}
+
+#posts {
+	height: 100px;
+	background-color: blue;
+}
+
+@media(min-width:900px) {
+	#container{
+		flex-direction: row;
+	}
+	#footer1 {
+		display: initial;
+	}
+	#footer2 {
+		display: none;
+	}
+	#posts {
+		width: 80%;
+	}
+}

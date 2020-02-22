@@ -3,6 +3,10 @@
 	font-family: "Lora", Times, serif;
 }
 
+body {
+	background-color: FloralWhite;
+}
+
 a {
 	text-decoration: none;
 }
@@ -15,40 +19,60 @@ ul {
 }
 
 #container {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"header header header header"
+		"posts posts posts posts"
+		"nav nav nav nav"
+		"footer footer footer footer";
 }
 
-#sidebar, #archive2, footer {
+#header, #footer, #nav_header {
 	text-align: center;
 }
 
+#header {
+	grid-area: header;
+}
 
-#archive1, #footer1 {
-	display: none;
+#posts {
+	grid-area: posts;
+	width: 100%;
+	height: 400vh;
+	background-color: pink;
+}
+
+#nav {
+	grid-area: nav;
+}
+
+#footer {
+	grid-area: footer;
+	padding-top: 20px;
+}
+
+#logo_heading {
+	
 }
 
 #about {
-	padding: 0px 40px 0px;
+	padding: 10px 40px;
 }
 
-
-#posts {
-	height: 100px;
-	background-color: blue;
-}
 
 @media(min-width:900px) {
-	#container{
-		flex-direction: row;
+	#container {
+		grid-template-rows: 200px 200px auto;
+		grid-template-areas: 
+			"header posts posts posts"
+			"nav posts posts posts"
+			"footer posts posts posts"
+			"footer posts posts posts";
 	}
-	#archive1, #footer1 {
-		display: initial;
-	}
-	#archive2, #footer2 {
-		display: none;
-	}
-	#posts {
-		width: 80%;
+	
+	#about {
+		padding: 10px;
 	}
 }

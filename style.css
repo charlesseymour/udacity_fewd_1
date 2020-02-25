@@ -64,10 +64,11 @@ ul {
 
 #logo_heading {
 	background-color: lightblue;
+	margin-bottom: 0px;
 }
 
 #about {
-	padding: 10px 40px;
+	padding: 0px 40px 10px;
 }
 
 

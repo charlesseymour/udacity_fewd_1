@@ -23,8 +23,8 @@ ul {
 	grid-template-columns: 25% 25% 25% 25%;
 	grid-template-rows: auto;
 	grid-template-areas: 
+		"cards cards cards cards"
 		"header header header header"
-		"posts posts posts posts"
 		"nav nav nav nav"
 		"footer footer footer footer";
 }
@@ -43,20 +43,20 @@ ul {
 	text-align: center;
 }
 
-#posts {
+#cards {
 	display: grid;
 	grid-template-columns: 325px;
 	grid-template-rows: auto;
 	grid-template-areas: 
 		"title"
 		"card";
-	grid-area: posts;
+	grid-area: cards;
 	grid-gap: 30px;
 	justify-items: center;
 	justify-content: center;
 	/*width: 100%;*/
 	/*height: 400vh;*/
-	background-color: DarkSeaGreen;
+	background-color: rgb(165, 214, 182);
 	padding-bottom: 50px;
 }
 
@@ -109,19 +109,85 @@ button {
 	padding: 0px 40px 10px;
 }
 
-@media(min-width:700px) {
-	
+#post_container {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"post post post post"
+		"header header header header"
+		"nav nav nav nav"
+		"footer footer footer footer";
 }
 
+#profile {
+	grid-area: profile;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0px;
+}
+
+#avatar {
+	margin-top: 10px;
+	max-width: 200px;
+}
+
+#avatar_div, #author {
+	width: 50%;
+}
+#author {
+	text-align: center;
+}
+
+#post {
+	background-color: blue;
+	height: 400px;
+	width: 100%;
+	grid-area: post;
+}
+
+@media(min-width:450px) {
+	#profile {
+		flex-direction: row;
+	}
+	
+	#author {
+		text-align: left;
+	}
+}
 @media(min-width:900px) {
 	#container {
 		grid-template-rows: 180px 200px auto;
 		grid-template-areas: 
-			"header posts posts posts"
-			"nav posts posts posts"
-			"footer posts posts posts"
-			"footer posts posts posts";
+			"header post post post"
+			"nav post post post"
+			"footer post post post"
+			"footer post post post";
 		grid-column-gap: 0;
+	}
+	
+	#post_container {
+		grid-template-rows: auto 200px auto;
+		grid-template-areas: 
+			"header post post post"
+			"nav post post post"
+			"footer post post post"
+			"footer post post post";
+		grid-column-gap: 0;
+	}
+	
+	#profile {
+		flex-direction: column;
+	}
+	
+	#avatar_div {
+		width: 100%;
+	}
+	
+	#author {
+		width: 70%;
 	}
 	
 	#about {
@@ -132,11 +198,13 @@ button {
 		padding: 20px;
 	}
 	
-	#posts {
+	#cards {
 		grid-template-columns: 325px 325px;
 		grid-template-areas: 
 			"title title"
 			"card card"
 			"card card";
 	}
+	
+	
 }

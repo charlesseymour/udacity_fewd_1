@@ -1,5 +1,4 @@
 * {
-	/*border: 1px solid red;*/
 	font-family: "Lora", Times, serif;
 }
 
@@ -61,7 +60,6 @@ ul {
 article {
 	height: 240px;
 	box-sizing: border-box;
-	/*background-color: lightgreen;*/
 	background-image: url("pencils.jpg");
 	background-size: cover;
 	background-position: left;
@@ -75,10 +73,6 @@ button {
 	margin-top: 30px;
 	padding: 10px 5px;
 }
-
-/*article > p {
-	width: 60%;
-}*/
 
 #nav_header {
 	background-color: BurlyWood;
@@ -201,10 +195,6 @@ button {
 		grid-column-gap: 0;
 	}
 	
-	/*#profile {
-		flex-direction: column;
-	}*/
-	
 	#avatar_div {
 		width: 100%;
 	}
@@ -229,6 +219,4 @@ button {
 			"card card"
 			"card card";
 	}
-	
-	
 }

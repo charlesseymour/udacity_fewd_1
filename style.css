@@ -54,9 +54,7 @@ ul {
 	grid-gap: 30px;
 	justify-items: center;
 	justify-content: center;
-	/*width: 100%;*/
-	/*height: 400vh;*/
-	background-color: rgb(165, 214, 182);
+	background-color: #e9e7ea;
 	padding-bottom: 50px;
 }
 
@@ -153,10 +151,14 @@ button {
 }
 
 #post {
-	background-color: blue;
-	height: 400px;
-	width: 100%;
+	box-sizing: border-box;
+	padding: 15px;
+	background-color: rgb(165, 214, 182);
 	grid-area: post;
+}
+
+#blog_title {
+	text-align: center;
 }
 
 @media(min-width:450px) and (max-width: 899px) {

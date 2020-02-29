@@ -41,7 +41,7 @@
 article {
 	height: 240px;
 	box-sizing: border-box;
-	background-image: url("pencils.jpg");
+	background-image: url("../images/pencils.jpg");
 	background-size: cover;
 	background-position: left;
 	padding: 10px 20px;
@@ -69,7 +69,7 @@ button {
 #footer {
 	grid-area: footer;
 	padding: 20px 0px;
-	background-image: url("1019.png");
+	background-image: url("../images/1019.png");
 	background-color: lightgray;
 }
 

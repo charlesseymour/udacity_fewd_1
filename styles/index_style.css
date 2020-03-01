@@ -2,7 +2,7 @@
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
 	grid-template-rows: auto;
-	grid-template-areas: 
+	grid-template-areas:
 		"cards cards cards cards"
 		"header header header header"
 		"nav nav nav nav"
@@ -27,7 +27,7 @@
 	display: grid;
 	grid-template-columns: 325px;
 	grid-template-rows: auto;
-	grid-template-areas: 
+	grid-template-areas:
 		"title"
 		"card";
 	grid-area: cards;
@@ -85,25 +85,25 @@ button {
 @media(min-width:930px) {
 	#container {
 		grid-template-rows: 180px 200px auto;
-		grid-template-areas: 
+		grid-template-areas:
 			"header cards cards cards"
 			"nav cards cards cards"
 			"footer cards cards cards"
 			"footer cards cards cards";
 		grid-column-gap: 0;
 	}
-	
+
 	#about {
 		padding: 10px 20px;
 	}
-	
+
 	#footer {
 		padding: 20px;
 	}
-	
+
 	#cards {
 		grid-template-columns: 325px 325px;
-		grid-template-areas: 
+		grid-template-areas:
 			"title title"
 			"card card"
 			"card card";

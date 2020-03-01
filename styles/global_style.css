@@ -6,9 +6,52 @@ body {
 	margin: 0px;
 }
 
+h1 {
+	font-weight: bold;
+	letter-spacing: -1px; 
+	text-align: center;
+}
+
+
+h2 { 
+	font-weight: 300;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+h3 {
+	font-weight: 100;
+	letter-spacing: 2px;
+	text-decoration: underline;
+}
+
 a {
 	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	font-size: 0.9em;
 }
+
+q {
+	background-color: LightGray;
+	display: block;
+	padding: 20px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+b {
+	line-height: 1.2;
+	letter-spacing: 1.2px;
+	text-decoration: underline black wavy;
+}
+
+i {
+	letter-spacing: -0.5px;
+	text-decoration-line: underline;
+	text-decoration-style: dotted;
+}
+
 
 ul {
 	list-style-type: none;

@@ -82,7 +82,7 @@ button {
 	padding: 0px 40px 10px;
 }
 
-@media(min-width:900px) {
+@media(min-width:930px) {
 	#container {
 		grid-template-rows: 180px 200px auto;
 		grid-template-areas: 
